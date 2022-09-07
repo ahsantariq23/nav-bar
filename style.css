@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#menu{
+display:none;
+}
+nav{
+    background-color: lightcoral;
+    height: 70px;
+    color: rgb(0,0,0 , 0.6)
+}
+img{
+  opacity: 1;
+}
+#nav-con{ 
+    height: 100%;
+    width: 88%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    font-size: 20px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+li{
+    padding: 8px;
+}
+nav #heading{
+    color: wheat;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+ul li:hover{
+ background-color: rgb(255,255,255,0.07);
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:1048px){
+    
+    #heading{
+        font-size: 16px !important;
+    }
+    #nav-con {
+        width:96%
+    }
+    
+    ul{
+        gap: 1rem;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:790px){
+#nav-con{
+    display: block;
+    width :95%;
+}
+ul{
+    display: none;
+}
+#heading{
+    font-size: 16px !important;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+#menu{
+    z-index: 3;
+    display: block;
+    position: absolute;
+    right:0;
+    top: 14px;
+}
+ /*javascript added classes */
+.remove{
+    display: none !important;
+}
+.ul-design{
+    display: flex;
+    z-index: 2;
+    font-size: 25px;
+    font-weight: bold;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.nav-color{
+    transition:600ms;
+    z-index: 1;
+    height: 100vh;
+    background-color:lightcoral;
+}
+
+}
